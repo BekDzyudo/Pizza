@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pizza</title>
+    <link
+      rel="stylesheet"
+      href="font-awesome-4.7.0_2/font-awesome-4.7.0/css/font-awesome.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="pizza_block">
+      <h2 class="block_title">Pizza order</h2>
+      <form action="" id="myform">
+        <input
+          type="text"
+          class="user_input"
+          id="username"
+          placeholder="User name"
+        /><br />
+        <input
+          type="number"
+          class="user_input"
+          id="phone_number"
+          placeholder="Phone number"
+        /><br />
+        <input
+          type="text"
+          class="user_input"
+          id="user_address"
+          placeholder="User Address"
+        /><br />
+        <div class="select_block">
+          <label for="dough">Dough thickness:</label>
+          <select id="dough">
+            <option checked>none</option>
+            <option>Thin</option>
+            <option>Medium</option>
+            <option>Thick</option>
+          </select>
+        </div>
+        <div class="size_block">
+          <h3>Size:</h3>
+          <div class="radio_btn">
+            <div style="margin-left: 70px" class="sm_block">
+              <label for="sm25">25sm</label>
+              <input
+                type="radio"
+                class="radioshow"
+                id="sm25"
+                name="size"
+                value="25sm"
+              />
+            </div>
+            <div class="sm_block">
+              <label for="sm30">30sm</label>
+              <input
+                type="radio"
+                class="radioshow"
+                id="sm30"
+                name="size"
+                value="30sm"
+              />
+            </div>
+            <div class="sm_block">
+              <label for="sm35">35sm</label>
+              <input
+                type="radio"
+                class="radioshow"
+                id="sm35"
+                name="size"
+                value="35sm"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="on_pizza">
+          <h3>On Pizza:</h3>
+          <div class="checkbox_block">
+            <div class="left">
+              <input type="checkbox" class="check" id="tomato" value="Tomato" />
+              <label for="tomato">Tomato</label><br /><br />
+
+              <input
+                type="checkbox"
+                class="check"
+                id="meat"
+                value="Turkey meat"
+              />
+              <label for="meat">Turkey meat</label><br /><br />
+
+              <input type="checkbox" class="check" id="olive" value="Olive" />
+              <label for="olive">Olive</label><br />
+            </div>
+            <div class="right">
+              <input
+                type="checkbox"
+                class="check"
+                id="cucumber"
+                value="Pickled cucumber"
+              />
+              <label for="cucumber">Pickled cucumber</label><br /><br />
+
+              <input
+                type="checkbox"
+                class="check"
+                id="mushroom"
+                value="Mushroom"
+              />
+              <label for="mushroom">Mushroom</label><br /><br />
+
+              <input
+                type="checkbox"
+                class="check"
+                id="horse"
+                value="Horse meat"
+              />
+              <label for="horse">Horse meat</label>
+            </div>
+          </div>
+        </div>
+        <div class="add">
+          <h3>Add:</h3>
+          <div class="add_check">
+            <div>
+              <input
+                type="checkbox"
+                class="add_preparat"
+                id="pepper"
+                value="Pepper"
+              />
+              <label for="pepper">Pepper</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                class="add_preparat"
+                id="sausages"
+                value="Sausages"
+              />
+              <label for="sausages">Sausages</label>
+            </div>
+          </div>
+        </div>
+        <input type="button" value="Save" id="Save" onclick="Pizza()" />
+      </form>
+    </div>
+
+    <div class="modal_block">
+      <!-- <h2>Order: 1</h2>
+      <h3>
+        Name:
+        <p>Palonchiyev Pistonchi</p>
+      </h3>
+      <h3>
+        Phone:
+        <p>+998938549909</p>
+      </h3>
+      <h3>
+        Addres:
+        <p>Qoraqamish 2/4</p>
+      </h3>
+      <hr />
+      <h3>
+        Dough thickness:
+        <p>Medium</p>
+      </h3>
+      <h3>
+        Size:
+        <p>25sm</p>
+      </h3>
+      <h3>
+        On Pizza:
+        <p>Tomato, Pickled cucumber, Olive</p>
+      </h3>
+      <h3>
+        Add:
+        <p>Pepper</p>
+      </h3>
+      <hr />
+      <h3>
+        Total:
+        <p>40$</p>
+      </h3>
+      <button id="close">Close</button> -->
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
